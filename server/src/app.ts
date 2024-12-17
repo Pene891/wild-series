@@ -6,6 +6,10 @@ const app = express();
 
 // Configure it
 
+app.get("/", (req, res) => {
+  res.send("Welcome to my personnal Wild Series! 🎄");
+});
+
 /* ************************************************************************* */
 
 // CORS Handling: Why is the current code present and do I need to define specific allowed origins for my project?
